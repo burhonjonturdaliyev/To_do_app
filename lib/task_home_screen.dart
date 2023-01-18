@@ -70,7 +70,8 @@ class _Task_Home_screenState extends State<Task_Home_screen> {
             return ListView.builder(
                 itemCount: snapshot.data?.length,
                 itemBuilder: (context, index) {
-                  if (index == 0) {
+                  // ignore: unnecessary_null_comparison
+                  if (index == null) {
                     return Container(
                       child: Text(
                         "My tasks",
